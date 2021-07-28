@@ -1,0 +1,40 @@
+.CardUser
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .CardUser
+            margin-bottom: 1.5%
+            background: #191c30
+            height: 80px
+            border-radius: 8px
+            width: 32%
+            padding: 12px
+
+            padding-left: 15px
+            box-sizing: border-box
+            position: relative
+            &__user
+                width: calc(100% - 50px)
+                margin-bottom: 10px
+                font-size: 18px
+                font-weight: 500
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                display: flex
+            &__name
+                margin-right: 4px
+            &__email
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                width: calc(100% - 50px)
+    &__img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 10px
+        cursor: pointer
+        display: block
+        height: 35px
