@@ -16,6 +16,8 @@ const PagesRouter = () => {
             )
           }
         ></Route>
+        <Route path="/login" component={LoginPage}></Route>
+        <Route path="/registration" component={RegistrationPage}></Route>
         <Route
           path="/"
           render={() =>
@@ -26,8 +28,6 @@ const PagesRouter = () => {
             )
           }
         ></Route>
-        <Route path="/login" component={LoginPage}></Route>
-        <Route path="/registration" component={RegistrationPage}></Route>
       </Switch>
     </div>
   );
